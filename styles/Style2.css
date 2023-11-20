@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+
+    padding: 0;
+
+    margin: 0;
+}
+
+:root {
+    --background_esquerdo:#2F58CD; 
+    --background_direito:#FFFFFF ;
+    --background_body: #F1EFEF;
+    --text_color: #525252;
+    --text_color_terciaria: #FFFFFF;
+    --border_color:#D8D9DA;
+    --color_hover: #87CBB9;
+    --input_color: #A8A196;
+    --background_hover: #5F85DB;
+    --text_color_secundaria: #525252 ;
+    --fonte_principal: 'Roboto', sans-serif; /*weight: 300px*/
+    --sombreado: #B4B4B3;
+
+}
+
+body{
+
+    background-color: var(--background_body) ;
+
+}
+
+.container {
+    padding: 8%;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    font-family: var(--fonte_principal);
+    color: var(--text_color);
+    font-size: 24px;
+    font-weight: 300px;
+    padding-bottom: 60px;
+}
+.formato_texto{
+
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+.texto{
+
+    font-family: var(--fonte_principal);
+    color: var(--text_color);
+    font-size: 20px;
+    font-weight: 300px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+ 
+}
+
+.fields{
+
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--border_color);
+    width:450px;
+    text-align:left;
+    border-radius: 6px;
+    font-size:15px;
+    padding: 20px 0;
+    font-family: var(--fonte_principal);
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+
+}
+
+.fields:hover{
+
+    border-color: var(--input_color);
+}
+
+
+.quadrado_direito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 20px 20px 0;
+    width: 600px;
+    height: 700px;
+    background-color: var(--background_direito);
+    box-shadow: 3px 3px 2px var(--sombreado);
+    background: linear-gradient(to bottom right, #EBE4D1); 
+}
+
+
+.quadrado_esquerdo {
+    border-radius: 20px 0 0 20px;
+    width: 600px;
+    height: 700px;
+    background-color: var(--background_esquerdo);
+    box-shadow: 3px 3px 2px var(--sombreado);
+    font-family: var(--fonte_principal);
+    color: var(--text_color_secundario);
+    text-align: center;
+    justify-content: center;
+    font-weight: 600px;
+    background: linear-gradient(to bottom right, #5F85DB,);
+
+}
+
+
+.botao_login {
+    display: flex;
+    font-size: 20px;
+    font-weight:300px;
+    font-family: var(--fonte_principal);
+    color: #FFFFFF;
+    background-color: var(--background_esquerdo);
+    border-radius: 6px;
+    text-align:center;
+    justify-content: center;
+    text-decoration: none;
+    width: 450px;
+    padding: 20px 0;
+    background: linear-gradient(to bottom right, #5F85DB,);
+}
+.check{
+
+    font-family: var(--fonte_principal);
+    font-size: 15px;
+   color: var(--text_color_secundaria);
+   font-weight: bold;
+}
+.texto_rodape{
+
+    font-family: var(--fonte_principal);
+    font-size: 15px;
+    font-weight: bold;
+    color:var(--text_color_secundaria);
+    text-align: center;
+  
+}
+
+.clique_link{
+    color: var(--background_esquerdo);
+}
+
+.clique_link:hover{
+
+    color: var(--color_hover);
+}
+
+.create{
+
+    font-family: var(--fonte_principal);
+    color: var(--text_color);
+    font-size: 24px;
+    text-align: center;
+    font-weight: 300px;
+    padding-bottom: 60px;
+    
+}
+    
+.botao_signUp{
+
+    display: flex;
+    font-size: 20px;
+    font-weight:300px;
+    font-family: var(--fonte_principal);
+    color: #FFFFFF;
+    background-color: var(--background_esquerdo);
+    border-radius: 6px;
+    text-align:center;
+    justify-content: center;
+    text-decoration: none;
+    width: 458px;
+    padding: 20px 0;
+    background: linear-gradient(to bottom right, #5F85DB,); 
+    margin-bottom: 25px;
+}
+
+.botao_signUp:hover{
+
+    box-shadow: 3px 3px 2px var(--sombreado);
+}
+
+.botao_login:hover{
+
+    box-shadow: 3px 3px 2px var(--sombreado);
+}
+
+
+/*top-left top rigth bottom rigth bottom left*/
